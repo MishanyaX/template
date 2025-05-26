@@ -45,7 +45,7 @@ main {
     border-radius: 1px;
 }
 
-.artists-grid {
+.artists {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 32px 16px;
@@ -132,7 +132,7 @@ main {
     margin-top: 48px;
 }
 
-.tracks-grid {
+.tracks {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 0 32px;
