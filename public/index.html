@@ -1,37 +1,409 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+<head>
+    <meta charset="UTF-8" />
+    <title>Music | Last.fm</title>
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="footer.css" />
+</head>
+<body>
+   <header class="site-header">
+        <div class="head-logo">last.fm</div>
+        <div class="search-form">
+            <form id="search-form" action="search.html" method="GET">
+                <input type="search" id="search-input" placeholder="Search">
+                <button type="submit">
+                    <i class="icon-search"><img src="1.svg" width="18" height="18"></i>
+                </button>
+            </form>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">Live</a></li>
+                <li><a href="#">Music</a></li>
+                <li><a href="#">Charts</a></li>
+                <li><a href="#">Events</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="main-title">Music</h1>
+        <section class="hot-artists">
+            <h2 class="section-title">Hot right now</h2>
+            <div class="artists-grid">
+                <div class="artist-card">
+                    <img src="photo.jpg"/>
+                    <div class="artist-name">Kanye West</div>
+                    <div class="artist-tags">
+                        <p class="artist-tag">hip-hop</p>
+                        <p class="artist-tag">rap</p>
+                        <p class="artist-tag">hip hop</p>
+                    </div>
+                </div>
+                <div class="artist-card">
+                    <img src="photo.jpg"/>
+                    <div class="artist-name">j-hope</div>
+                    <div class="artist-tags">
+                        <p class="artist-tag">hip-hop</p>
+                        <p class="artist-tag">rap</p>
+                        <p class="artist-tag">korean</p>
+                    </div>
+                </div>
+                <div class="artist-card">
+                    <img src="photo.jpg"/>
+                    <div class="artist-name">The Weeknd</div>
+                    <div class="artist-tags">
+                        <p class="artist-tag">rnb</p>
+                        <p class="artist-tag">weekndxo</p>
+                        <p class="artist-tag">canadian</p>
+                    </div>
+                </div>
+                <div class="artist-card">
+                    <img src="photo.jpg"/>
+                    <div class="artist-name">Tyler, the Creator</div>
+                    <div class="artist-tags">
+                        <p class="artist-tag">rap</p>
+                        <p class="artist-tag">hip-hop</p>
+                        <p class="artist-tag">alt-rap</p>
+                    </div>
+                </div>
+                <div class="artist-card">
+                    <img src="photo.jpg"/>
+                    <div class="artist-name">Drake</div>
+                    <div class="artist-tags">
+                        <p class="artist-tag">hip-hop</p>
+                        <p class="artist-tag">rap</p>
+                        <p class="artist-tag">rnb</p>
+                    </div>
+                </div>
+                <div class="artist-card">
+                    <img src="photo.jpg"/>
+                    <div class="artist-name">Steve Lacy</div>
+                    <div class="artist-tags">
+                        <p class="artist-tag">new jazz</p>
+                        <p class="artist-tag">jazz</p>
+                        <p class="artist-tag">saxaphone</p>
+                    </div>
+                </div>
+                <div class="artist-card">
+                    <img src="photo.jpg"/>
+                    <div class="artist-name">Kanye West</div>
+                    <div class="artist-tags">
+                        <p class="artist-tag">hip-hop</p>
+                        <p class="artist-tag">rap</p>
+                        <p class="artist-tag">hip hop</p>
+                    </div>
+                </div>
+                <div class="artist-card">
+                    <img src="photo.jpg"/>
+                    <div class="artist-name">j-hope</div>
+                    <div class="artist-tags">
+                        <p class="artist-tag">hip-hop</p>
+                        <p class="artist-tag">rap</p>
+                        <p class="artist-tag">korean</p>
+                    </div>
+                </div>
+                <div class="artist-card">
+                    <img src="photo.jpg"/>
+                    <div class="artist-name">The Weeknd</div>
+                    <div class="artist-tags">
+                        <p class="artist-tag">rnb</p>
+                        <p class="artist-tag">weekndxo</p>
+                        <p class="artist-tag">canadian</p>
+                    </div>
+                </div>
+                <div class="artist-card">
+                    <img src="photo.jpg"/>
+                    <div class="artist-name">Tyler, the Creator</div>
+                    <div class="artist-tags">
+                        <p class="artist-tag">rap</p>
+                        <p class="artist-tag">hip-hop</p>
+                        <p class="artist-tag">alt-rap</p>
+                    </div>
+                </div>
+                <div class="artist-card">
+                    <img src="photo.jpg"/>
+                    <div class="artist-name">Drake</div>
+                    <div class="artist-tags">
+                        <p class="artist-tag">hip-hop</p>
+                        <p class="artist-tag">rap</p>
+                        <p class="artist-tag">rnb</p>
+                    </div>
+                </div>
+                <div class="artist-card">
+                    <img src="photo.jpg"/>
+                    <div class="artist-name">Steve Lacy</div>
+                    <div class="artist-tags">
+                        <p class="artist-tag">new jazz</p>
+                        <p class="artist-tag">jazz</p>
+                        <p class="artist-tag">saxaphone</p>
+                    </div>
+                </div> 
+            </div>
+        </section>
+        <section class="popular-tracks">
+            <h2 class="section-title">Popular tracks</h2>
+            <div class="tracks-grid">
+                <div class="track">
+                    <img src="track.jpeg"/>
+                    <div class="track-info">
+                        <div class="track-title">SEXY NUKIM (feat. RM of BTS)</div>
+                        <div class="track-artist">Balming Tiger</div>
+                        <div class="song-tags">
+                            <p class="song-tag">hip-hop</p>
+                            <p class="song-tag">rap</p>
+                            <p class="song-tag">hip hop</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="track">
+                    <img src="track.jpeg"/>
+                    <div class="track-info">
+                        <div class="track-title">MORE</div>
+                        <div class="track-artist">j-hope</div>
+                        <div class="song-tags">
+                            <p class="song-tag">hip-hop</p>
+                            <p class="song-tag">rap</p>
+                            <p class="song-tag">hip hop</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="track">
+                    <img src="track.jpeg"/>
+                    <div class="track-info">
+                        <div class="track-title">Yet to Come</div>
+                        <div class="track-artist">BTS</div>
+                        <div class="song-tags">
+                            <p class="song-tag">hip-hop</p>
+                            <p class="song-tag">rap</p>
+                            <p class="song-tag">hip hop</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="track">
+                    <img src="track.jpeg"/>
+                    <div class="track-info">
+                        <div class="track-title">Bad Decisions (with BTS & Snoop Dogg)</div>
+                        <div class="track-artist">Benny Blanco</div>
+                        <div class="song-tags">
+                            <p class="song-tag">hip-hop</p>
+                            <p class="song-tag">rap</p>
+                            <p class="song-tag">hip hop</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="track">
+                    <img src="track.jpeg"/>
+                    <div class="track-info">
+                        <div class="track-title">Left and Right (feat. Jung Kook of BTS)</div>
+                        <div class="track-artist">Charlie Puth</div>
+                        <div class="song-tags">
+                            <p class="song-tag">hip-hop</p>
+                            <p class="song-tag">rap</p>
+                            <p class="song-tag">hip hop</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="track">
+                    <img src="track.jpeg"/>
+                    <div class="track-info">
+                        <div class="track-title">Pink Venom</div>
+                        <div class="track-artist">BLACKPINK</div>
+                        <div class="song-tags">
+                            <p class="song-tag">hip-hop</p>
+                            <p class="song-tag">rap</p>
+                            <p class="song-tag">hip hop</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="track">
+                    <img src="track.jpeg"/>
+                    <div class="track-info">
+                        <div class="track-title">SEXY NUKIM (feat. RM of BTS)</div>
+                        <div class="track-artist">Balming Tiger</div>
+                        <div class="song-tags">
+                            <p class="song-tag">hip-hop</p>
+                            <p class="song-tag">rap</p>
+                            <p class="song-tag">hip hop</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="track">
+                    <img src="track.jpeg"/>
+                    <div class="track-info">
+                        <div class="track-title">MORE</div>
+                        <div class="track-artist">j-hope</div>
+                        <div class="song-tags">
+                            <p class="song-tag">hip-hop</p>
+                            <p class="song-tag">rap</p>
+                            <p class="song-tag">hip hop</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="track">
+                    <img src="track.jpeg"/>
+                    <div class="track-info">
+                        <div class="track-title">Yet to Come</div>
+                        <div class="track-artist">BTS</div>
+                        <div class="song-tags">
+                            <p class="song-tag">hip-hop</p>
+                            <p class="song-tag">rap</p>
+                            <p class="song-tag">hip hop</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="track">
+                    <img src="track.jpeg"/>
+                    <div class="track-info">
+                        <div class="track-title">Bad Decisions (with BTS & Snoop Dogg)</div>
+                        <div class="track-artist">Benny Blanco</div>
+                        <div class="song-tags">
+                            <p class="song-tag">hip-hop</p>
+                            <p class="song-tag">rap</p>
+                            <p class="song-tag">hip hop</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="track">
+                    <img src="track.jpeg"/>
+                    <div class="track-info">
+                        <div class="track-title">Left and Right (feat. Jung Kook of BTS)</div>
+                        <div class="track-artist">Charlie Puth</div>
+                        <div class="song-tags">
+                            <p class="song-tag">hip-hop</p>
+                            <p class="song-tag">rap</p>
+                            <p class="song-tag">hip hop</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="track">
+                    <img src="track.jpeg"/>
+                    <div class="track-info">
+                        <div class="track-title">Pink Venom</div>
+                        <div class="track-artist">BLACKPINK</div>
+                        <div class="song-tags">
+                            <p class="song-tag">hip-hop</p>
+                            <p class="song-tag">rap</p>
+                            <p class="song-tag">hip hop</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="track">
+                    <img src="track.jpeg"/>
+                    <div class="track-info">
+                        <div class="track-title">SEXY NUKIM (feat. RM of BTS)</div>
+                        <div class="track-artist">Balming Tiger</div>
+                        <div class="song-tags">
+                            <p class="song-tag">hip-hop</p>
+                            <p class="song-tag">rap</p>
+                            <p class="song-tag">hip hop</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="track">
+                    <img src="track.jpeg"/>
+                    <div class="track-info">
+                        <div class="track-title">MORE</div>
+                        <div class="track-artist">j-hope</div>
+                        <div class="song-tags">
+                            <p class="song-tag">hip-hop</p>
+                            <p class="song-tag">rap</p>
+                            <p class="song-tag">hip hop</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="track">
+                    <img src="track.jpeg"/>
+                    <div class="track-info">
+                        <div class="track-title">Yet to Come</div>
+                        <div class="track-artist">BTS</div>
+                        <div class="song-tags">
+                            <p class="song-tag">hip-hop</p>
+                            <p class="song-tag">rap</p>
+                            <p class="song-tag">hip hop</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="track">
+                    <img src="track.jpeg"/>
+                    <div class="track-info">
+                        <div class="track-title">Bad Decisions (with BTS & Snoop Dogg)</div>
+                        <div class="track-artist">Benny Blanco</div>
+                        <div class="song-tags">
+                            <p class="song-tag">hip-hop</p>
+                            <p class="song-tag">rap</p>
+                            <p class="song-tag">hip hop</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="track">
+                    <img src="track.jpeg"/>
+                    <div class="track-info">
+                        <div class="track-title">Left and Right (feat. Jung Kook of BTS)</div>
+                        <div class="track-artist">Charlie Puth</div>
+                        <div class="song-tags">
+                            <p class="song-tag">hip-hop</p>
+                            <p class="song-tag">rap</p>
+                            <p class="song-tag">hip hop</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="track">
+                    <img src="track.jpeg"/>
+                    <div class="track-info">
+                        <div class="track-title">Pink Venom</div>
+                        <div class="track-artist">BLACKPINK</div>
+                        <div class="song-tags">
+                            <p class="song-tag">hip-hop</p>
+                            <p class="song-tag">rap</p>
+                            <p class="song-tag">hip hop</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-col">
+            <div class="footer-title">COMPANY</div>
+                <a href="#">About Last.fm</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Jobs</a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <div class="footer-title">HELP</div>
+                <a href="#">Track My Music</a>
+                <a href="#">Community Support</a>
+                <a href="#">Community Guidelines</a>
+                <a href="#">Help</a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <div class="footer-title">GOODIES</div>
+                <a href="#">Download Scrobbler</a>
+                <a href="#">Developer API</a>
+                <a href="#">Free Music Downloads</a>
+                <a href="#">Merchandise</a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <div class="footer-title">ACCOUNT</div>
+                <a href="#">Inbox</a>
+                <a href="#">Settings</a>
+                <a href="#">Last.fm Pro</a>
+                <a href="#">Logout</a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <div class="footer-title">FOLLOW US</div>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                <a href="#">YouTube</a>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>

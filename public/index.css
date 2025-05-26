@@ -1,0 +1,200 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 16px 60px 16px;
+    background: #fff;
+    color: #111;
+    min-height: 100vh;
+}
+
+.main-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 20px 0 36px 0;
+    text-align: center;
+    letter-spacing: -1px;
+}
+
+.section-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 28px;
+    margin-top: 0;
+    text-align: center;
+    color: #222;
+    position: relative;
+    padding-bottom: 16px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 5%;
+    height: 3px;
+    background-color: #bb1313;
+    border-radius: 1px;
+}
+
+.artists-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 32px 16px;
+    margin-bottom: 40px;
+}
+
+.artist-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fafafa;
+    border-radius: 12px;
+    padding: 18px 10px 14px 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    transition: box-shadow 0.18s, transform 0.18s;
+    cursor: pointer;
+    min-width: 0;
+    text-decoration: none;
+}
+
+.artist-card:hover {
+    box-shadow: 0 4px 18px rgba(213,16,7,0.12);
+    transform: translateY(-4px) scale(1.025);
+    background: #c7a1a1;
+}
+
+.artist-card img {
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 14px;
+    border: 3px solid #eee;
+    background: #ddd;
+}
+
+.artist-name {
+    font-weight: bold;
+    font-size: 1.05rem;
+    margin-bottom: 6px;
+    text-align: center;
+    color: #222;
+}
+
+.artist-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px;
+}
+
+.song-tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.song-tag {
+    color: #888;
+    font-size: 0.85rem;
+    padding: 2px 10px 2px 0px;
+    margin: 0;
+}
+
+.song-tag:hover {
+    text-decoration: underline;
+}
+
+.artist-tag {
+    background: #f2f2f2;
+    color: #888;
+    font-size: 0.85rem;
+    padding: 2px 10px;
+    border-radius: 12px;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.artist-tag:hover {
+    text-decoration: underline;
+}
+
+.popular-tracks {
+    margin-top: 48px;
+}
+
+.tracks-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.track {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    background: #fafafa;
+    border-radius: 10px;
+    padding: 10px 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    transition: box-shadow 0.17s, transform 0.17s;
+    min-width: 0;
+    text-decoration: none;
+}
+
+.track:hover {
+    box-shadow: 0 4px 18px rgba(213,16,7,0.12);
+    transform: translateY(-4px) scale(1.015);
+}
+
+.track img {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    object-fit: cover;
+    background: #eee;
+    flex-shrink: 0; 
+}
+
+.track-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+}
+
+.track-title {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #222;
+    margin-bottom: 1px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    max-width: 220px;
+}
+
+.track-artist {
+    font-size: 0.93rem;
+    color: #000000;
+    line-height: 1.2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 220px;
+}
+
+.track-artist:hover {
+    text-decoration: underline;
+}
